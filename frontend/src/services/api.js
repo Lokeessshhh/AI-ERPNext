@@ -1,6 +1,12 @@
 import axios from 'axios'
 
-const API_BASE_URL = 'http://localhost:3001/api'
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://ai-erpnext.onrender.com/api'
+
+// Debug logging
+console.log('🔧 API Configuration:')
+console.log('   VITE_API_URL:', import.meta.env.VITE_API_URL)
+console.log('   API_BASE_URL:', API_BASE_URL)
+console.log('   Environment:', import.meta.env.MODE)
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -8,6 +14,33 @@ const api = axios.create({
     'Content-Type': 'application/json',
   },
 })
+
+// Add request interceptor for debugging
+api.interceptors.request.use(
+  (config) => {
+    console.log('🚀 API Request:', config.method?.toUpperCase(), config.url)
+    console.log('   Full URL:', config.baseURL + config.url)
+    return config
+  },
+  (error) => {
+    console.error('❌ Request Error:', error)
+    return Promise.reject(error)
+  }
+)
+
+// Add response interceptor for debugging
+api.interceptors.response.use(
+  (response) => {
+    console.log('✅ API Response:', response.status, response.config.url)
+    console.log('   Data length:', Array.isArray(response.data) ? response.data.length : 'Not array')
+    return response
+  },
+  (error) => {
+    console.error('❌ API Error:', error.response?.status, error.config?.url)
+    console.error('   Error message:', error.message)
+    return Promise.reject(error)
+  }
+)
 
 // Products API
 export const productsAPI = {

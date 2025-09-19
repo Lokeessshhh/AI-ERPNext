@@ -28,18 +28,23 @@ This guide covers deploying Mini ERP Lite to various cloud platforms.
 # 3. Copy connection string
 ```
 
-### 2. Backend Deployment (Railway)
+### 2. Backend Deployment (Render)
 ```bash
 # 1. Fork this repository
-# 2. Go to https://railway.app
-# 3. Connect GitHub and select your fork
-# 4. Add environment variables:
-DATABASE_URL=your_neon_connection_string
+# 2. Go to https://render.com
+# 3. Create "Web Service" and connect GitHub
+# 4. Configure:
+#    - Root Directory: mini-erp/backend
+#    - Build Command: npm install
+#    - Start Command: npm start
+# 5. Add environment variables:
+DATABASE_URL=your_postgresql_connection_string
 NVIDIA_API_KEY=your_nvidia_api_key
-PORT=3001
 NODE_ENV=production
+# Note: PORT is automatically set by Render
 
-# 5. Railway will auto-deploy from /backend
+# 6. Deploy and initialize database:
+# POST https://your-app.onrender.com/api/setup-database
 ```
 
 ### 3. Frontend Deployment (Vercel)

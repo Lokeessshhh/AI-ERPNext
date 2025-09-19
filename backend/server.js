@@ -14,6 +14,21 @@ dotenv.config()
 const app = express()
 const PORT = process.env.PORT || 3001
 
+// Validate required environment variables
+if (!process.env.DATABASE_URL) {
+  console.error('❌ DATABASE_URL environment variable is required')
+  console.log('💡 Make sure to set DATABASE_URL in your environment variables')
+  console.log('💡 Example: postgresql://user:pass@host:port/database?sslmode=require')
+  process.exit(1)
+}
+
+console.log('🔧 Environment check:')
+console.log(`   NODE_ENV: ${process.env.NODE_ENV}`)
+console.log(`   PORT: ${PORT}`)
+console.log(`   DATABASE_URL: ${process.env.DATABASE_URL ? 'Set ✅' : 'Missing ❌'}`)
+console.log(`   NVIDIA_API_KEY: ${process.env.NVIDIA_API_KEY ? 'Set ✅' : 'Missing (optional)'}`)
+console.log('')
+
 // Middleware
 app.use(cors())
 app.use(express.json())
@@ -24,24 +39,36 @@ const testDatabaseConnection = async () => {
   while (retries > 0) {
     try {
       console.log(`🔄 Testing database connection... (${4 - retries}/3)`)
-      const result = await query('SELECT NOW() as current_time, COUNT(*) as product_count FROM products')
+      
+      // First try a simple connection test
+      const simpleResult = await query('SELECT NOW() as current_time')
       console.log('✅ Database connected successfully')
-      console.log(`📅 Database time: ${result.rows[0].current_time}`)
-      console.log(`📦 Products in database: ${result.rows[0].product_count}`)
+      console.log(`📅 Database time: ${simpleResult.rows[0].current_time}`)
+      
+      // Then try to check if tables exist
+      try {
+        const productResult = await query('SELECT COUNT(*) as product_count FROM products')
+        console.log(`📦 Products in database: ${productResult.rows[0].product_count}`)
+      } catch (tableError) {
+        console.log('⚠️  Tables not found - database needs initialization')
+        console.log('💡 Run POST /api/setup-database after deployment')
+      }
+      
       return
     } catch (error) {
       retries--
       console.error(`❌ Database connection attempt failed: ${error.message}`)
+      console.error(`❌ Full error:`, error)
       
       if (retries === 0) {
         console.log('💡 Database connection failed after 3 attempts.')
-        console.log('💡 Make sure to run: npm run setup-db')
-        console.log('💡 Or check if your DATABASE_URL is correct')
+        console.log('💡 Check your DATABASE_URL environment variable')
+        console.log('💡 Current DATABASE_URL format:', process.env.DATABASE_URL?.substring(0, 20) + '...')
         process.exit(1)
       }
       
-      console.log(`⏳ Retrying in 2 seconds... (${retries} attempts left)`)
-      await new Promise(resolve => setTimeout(resolve, 2000))
+      console.log(`⏳ Retrying in 3 seconds... (${retries} attempts left)`)
+      await new Promise(resolve => setTimeout(resolve, 3000))
     }
   }
 }
@@ -70,6 +97,26 @@ app.get('/api/health', async (req, res) => {
     res.status(500).json({ 
       status: 'ERROR', 
       message: 'Database connection failed',
+      error: error.message
+    })
+  }
+})
+
+// Database setup endpoint (for initial deployment)
+app.post('/api/setup-database', async (req, res) => {
+  try {
+    // Import the setup script
+    const { setupDatabase } = await import('./scripts/setup_database.js')
+    await setupDatabase()
+    res.json({ 
+      status: 'SUCCESS', 
+      message: 'Database setup completed successfully' 
+    })
+  } catch (error) {
+    console.error('Database setup failed:', error)
+    res.status(500).json({ 
+      status: 'ERROR', 
+      message: 'Database setup failed',
       error: error.message
     })
   }

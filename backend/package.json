@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
+    "build": "echo 'No build step required for backend'",
     "dev": "node --watch server.js",
     "setup-db": "node scripts/setup_database.js",
     "ingest": "node scripts/ingest_data.js",
