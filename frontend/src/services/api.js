@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://ai-erpnext.onrender.com/api'
+// Temporarily hard-coded for debugging
+const API_BASE_URL = 'https://ai-erpnext.onrender.com/api'
 
 // Debug logging
 console.log('🔧 API Configuration:')
