@@ -1,0 +1,201 @@
+id,name,category,price,stock,supplier_id
+prod-001,Wireless Mouse,Electronics,29.99,45,sup-001
+prod-002,Mechanical Keyboard,Electronics,89.99,23,sup-001
+prod-003,LED Monitor 24 inch,Electronics,249.99,18,sup-002
+prod-004,USB-C Hub,Electronics,49.99,67,sup-001
+prod-005,Bluetooth Headphones,Electronics,79.99,34,sup-002
+prod-006,Office Chair,Furniture,199.99,12,sup-003
+prod-007,Standing Desk,Furniture,399.99,8,sup-003
+prod-008,Desk Lamp,Furniture,39.99,28,sup-003
+prod-009,Webcam HD,Electronics,59.99,41,sup-002
+prod-010,Laptop Stand,Accessories,34.99,52,sup-004
+prod-011,Cable Management Kit,Accessories,19.99,89,sup-004
+prod-012,Wireless Charger,Electronics,24.99,73,sup-001
+prod-013,Ergonomic Mouse Pad,Accessories,14.99,156,sup-004
+prod-014,USB Flash Drive 32GB,Electronics,12.99,234,sup-002
+prod-015,External Hard Drive 1TB,Electronics,79.99,29,sup-002
+prod-016,Printer Paper A4,Office Supplies,8.99,145,sup-003
+prod-017,Blue Pens Pack,Office Supplies,3.99,267,sup-003
+prod-018,Sticky Notes,Office Supplies,2.99,189,sup-003
+prod-019,Stapler,Office Supplies,12.99,78,sup-003
+prod-020,Paper Clips Box,Office Supplies,1.99,345,sup-003
+prod-021,Gaming Mouse,Electronics,69.99,31,sup-001
+prod-022,Gaming Keyboard RGB,Electronics,129.99,19,sup-001
+prod-023,Monitor Arm,Accessories,89.99,15,sup-004
+prod-024,Desk Organizer,Accessories,24.99,67,sup-004
+prod-025,Phone Stand,Accessories,16.99,98,sup-004
+prod-026,Tablet Stand,Accessories,22.99,54,sup-004
+prod-027,Laptop Bag,Accessories,49.99,43,sup-005
+prod-028,Backpack Tech,Accessories,79.99,27,sup-005
+prod-029,Power Bank 10000mAh,Electronics,39.99,61,sup-002
+prod-030,Lightning Cable,Electronics,19.99,123,sup-002
+prod-031,USB-C Cable,Electronics,17.99,145,sup-002
+prod-032,HDMI Cable 6ft,Electronics,14.99,87,sup-002
+prod-033,Ethernet Cable 10ft,Electronics,12.99,76,sup-002
+prod-034,Screen Cleaner Kit,Accessories,9.99,234,sup-004
+prod-035,Keyboard Wrist Rest,Accessories,19.99,89,sup-004
+prod-036,Mouse Wrist Rest,Accessories,14.99,112,sup-004
+prod-037,Document Holder,Accessories,29.99,45,sup-004
+prod-038,Footrest,Furniture,59.99,23,sup-003
+prod-039,Bookshelf,Furniture,149.99,11,sup-003
+prod-040,Filing Cabinet,Furniture,199.99,7,sup-003
+prod-041,Whiteboard,Office Supplies,89.99,18,sup-003
+prod-042,Markers Set,Office Supplies,12.99,156,sup-003
+prod-043,Eraser,Office Supplies,1.99,289,sup-003
+prod-044,Ruler 12 inch,Office Supplies,3.99,167,sup-003
+prod-045,Calculator,Office Supplies,24.99,78,sup-003
+prod-046,Hole Punch,Office Supplies,19.99,89,sup-003
+prod-047,Scissors,Office Supplies,8.99,134,sup-003
+prod-048,Tape Dispenser,Office Supplies,14.99,98,sup-003
+prod-049,Binders Pack,Office Supplies,16.99,123,sup-003
+prod-050,Folders Pack,Office Supplies,9.99,234,sup-003
+prod-051,Notebook A5,Office Supplies,7.99,189,sup-003
+prod-052,Planner 2024,Office Supplies,19.99,67,sup-003
+prod-053,Calendar Wall,Office Supplies,12.99,89,sup-003
+prod-054,Push Pins,Office Supplies,2.99,345,sup-003
+prod-055,Rubber Bands,Office Supplies,1.99,456,sup-003
+prod-056,Paper Shredder,Office Equipment,149.99,12,sup-006
+prod-057,Laminator,Office Equipment,89.99,18,sup-006
+prod-058,Label Maker,Office Equipment,49.99,34,sup-006
+prod-059,Time Clock,Office Equipment,199.99,8,sup-006
+prod-060,Coffee Maker,Office Equipment,79.99,23,sup-006
+prod-061,Water Cooler,Office Equipment,299.99,5,sup-006
+prod-062,Microwave,Office Equipment,129.99,9,sup-006
+prod-063,Mini Fridge,Office Equipment,199.99,7,sup-006
+prod-064,Air Purifier,Office Equipment,149.99,14,sup-006
+prod-065,Humidifier,Office Equipment,69.99,28,sup-006
+prod-066,Desk Fan,Office Equipment,39.99,45,sup-006
+prod-067,Space Heater,Office Equipment,89.99,19,sup-006
+prod-068,Extension Cord,Electronics,19.99,123,sup-007
+prod-069,Power Strip,Electronics,24.99,89,sup-007
+prod-070,Surge Protector,Electronics,34.99,67,sup-007
+prod-071,UPS Battery Backup,Electronics,149.99,15,sup-007
+prod-072,Network Switch,Electronics,79.99,23,sup-007
+prod-073,WiFi Router,Electronics,129.99,18,sup-007
+prod-074,Modem,Electronics,89.99,21,sup-007
+prod-075,Ethernet Switch,Electronics,59.99,34,sup-007
+prod-076,Cable Tester,Electronics,29.99,45,sup-007
+prod-077,Multimeter,Electronics,39.99,38,sup-007
+prod-078,Soldering Iron,Electronics,24.99,56,sup-007
+prod-079,Heat Gun,Electronics,49.99,29,sup-007
+prod-080,Wire Strippers,Electronics,19.99,67,sup-007
+prod-081,Screwdriver Set,Tools,34.99,45,sup-008
+prod-082,Allen Key Set,Tools,19.99,78,sup-008
+prod-083,Pliers Set,Tools,29.99,56,sup-008
+prod-084,Wire Cutters,Tools,24.99,67,sup-008
+prod-085,Utility Knife,Tools,12.99,89,sup-008
+prod-086,Measuring Tape,Tools,14.99,78,sup-008
+prod-087,Level,Tools,19.99,45,sup-008
+prod-088,Hammer,Tools,24.99,34,sup-008
+prod-089,Drill Bits Set,Tools,39.99,23,sup-008
+prod-090,Safety Glasses,Safety,9.99,156,sup-008
+prod-091,Work Gloves,Safety,12.99,123,sup-008
+prod-092,Hard Hat,Safety,29.99,45,sup-008
+prod-093,Safety Vest,Safety,19.99,67,sup-008
+prod-094,First Aid Kit,Safety,39.99,34,sup-008
+prod-095,Fire Extinguisher,Safety,49.99,23,sup-008
+prod-096,Smoke Detector,Safety,24.99,56,sup-008
+prod-097,Carbon Monoxide Detector,Safety,34.99,38,sup-008
+prod-098,Security Camera,Security,89.99,19,sup-009
+prod-099,Door Lock Smart,Security,149.99,12,sup-009
+prod-100,Motion Sensor,Security,39.99,45,sup-009
+prod-101,Alarm System,Security,299.99,8,sup-009
+prod-102,Keypad Entry,Security,79.99,23,sup-009
+prod-103,Intercom System,Security,199.99,11,sup-009
+prod-104,Access Card Reader,Security,129.99,15,sup-009
+prod-105,Barrier Gate,Security,499.99,3,sup-009
+prod-106,Parking Sensor,Security,59.99,28,sup-009
+prod-107,LED Bulb,Lighting,12.99,234,sup-010
+prod-108,Fluorescent Tube,Lighting,8.99,156,sup-010
+prod-109,Ceiling Light,Lighting,49.99,45,sup-010
+prod-110,Floor Lamp,Lighting,79.99,23,sup-010
+prod-111,Table Lamp,Lighting,39.99,56,sup-010
+prod-112,Pendant Light,Lighting,69.99,34,sup-010
+prod-113,Track Lighting,Lighting,129.99,18,sup-010
+prod-114,Emergency Light,Lighting,59.99,28,sup-010
+prod-115,Exit Sign,Lighting,34.99,45,sup-010
+prod-116,Light Switch,Electrical,14.99,123,sup-011
+prod-117,Outlet,Electrical,9.99,189,sup-011
+prod-118,Circuit Breaker,Electrical,29.99,67,sup-011
+prod-119,Electrical Wire,Electrical,1.99,456,sup-011
+prod-120,Conduit,Electrical,3.99,234,sup-011
+prod-121,Junction Box,Electrical,7.99,156,sup-011
+prod-122,Wire Nuts,Electrical,5.99,289,sup-011
+prod-123,Electrical Tape,Electrical,2.99,345,sup-011
+prod-124,Voltage Tester,Electrical,19.99,78,sup-011
+prod-125,GFCI Outlet,Electrical,24.99,89,sup-011
+prod-126,Dimmer Switch,Electrical,34.99,56,sup-011
+prod-127,Timer Switch,Electrical,29.99,67,sup-011
+prod-128,Motion Switch,Electrical,39.99,45,sup-011
+prod-129,Smart Switch,Electrical,49.99,34,sup-011
+prod-130,Smart Outlet,Electrical,29.99,56,sup-011
+prod-131,Cleaning Supplies Kit,Cleaning,24.99,89,sup-012
+prod-132,Vacuum Cleaner,Cleaning,199.99,12,sup-012
+prod-133,Mop and Bucket,Cleaning,39.99,34,sup-012
+prod-134,Broom,Cleaning,19.99,67,sup-012
+prod-135,Dustpan,Cleaning,9.99,123,sup-012
+prod-136,Trash Bags,Cleaning,12.99,156,sup-012
+prod-137,Paper Towels,Cleaning,8.99,234,sup-012
+prod-138,Disinfectant Spray,Cleaning,6.99,189,sup-012
+prod-139,Glass Cleaner,Cleaning,4.99,267,sup-012
+prod-140,Floor Cleaner,Cleaning,7.99,178,sup-012
+prod-141,Toilet Paper,Cleaning,15.99,145,sup-012
+prod-142,Hand Soap,Cleaning,3.99,234,sup-012
+prod-143,Hand Sanitizer,Cleaning,5.99,189,sup-012
+prod-144,Tissues,Cleaning,2.99,267,sup-012
+prod-145,Sponges,Cleaning,4.99,156,sup-012
+prod-146,Microfiber Cloths,Cleaning,12.99,123,sup-012
+prod-147,Rubber Gloves,Cleaning,6.99,145,sup-012
+prod-148,Trash Can,Cleaning,29.99,45,sup-012
+prod-149,Recycling Bin,Cleaning,34.99,38,sup-012
+prod-150,Storage Box,Storage,19.99,78,sup-013
+prod-151,Filing Box,Storage,24.99,56,sup-013
+prod-152,Plastic Bins,Storage,14.99,89,sup-013
+prod-153,Metal Shelving,Storage,149.99,15,sup-013
+prod-154,Plastic Shelving,Storage,79.99,23,sup-013
+prod-155,Storage Cabinet,Storage,199.99,12,sup-013
+prod-156,Locker,Storage,299.99,8,sup-013
+prod-157,Coat Rack,Storage,49.99,34,sup-013
+prod-158,Umbrella Stand,Storage,29.99,45,sup-013
+prod-159,Magazine Rack,Storage,24.99,56,sup-013
+prod-160,Book Ends,Storage,12.99,89,sup-013
+prod-161,Drawer Organizer,Storage,16.99,67,sup-013
+prod-162,Closet Organizer,Storage,89.99,19,sup-013
+prod-163,Garment Rack,Storage,69.99,28,sup-013
+prod-164,Shoe Rack,Storage,39.99,45,sup-013
+prod-165,Tool Box,Storage,59.99,34,sup-013
+prod-166,Parts Organizer,Storage,34.99,56,sup-013
+prod-167,Label Tape,Storage,8.99,123,sup-013
+prod-168,Marker Pens,Storage,9.99,145,sup-013
+prod-169,Inventory Tags,Storage,12.99,89,sup-013
+prod-170,Barcode Scanner,Technology,149.99,18,sup-014
+prod-171,Label Printer,Technology,199.99,12,sup-014
+prod-172,Receipt Printer,Technology,129.99,15,sup-014
+prod-173,Cash Register,Technology,399.99,6,sup-014
+prod-174,POS System,Technology,799.99,3,sup-014
+prod-175,Credit Card Reader,Technology,89.99,23,sup-014
+prod-176,Tablet POS,Technology,299.99,9,sup-014
+prod-177,Inventory Software,Software,199.99,25,sup-014
+prod-178,Accounting Software,Software,299.99,20,sup-014
+prod-179,CRM Software,Software,399.99,15,sup-014
+prod-180,Project Management Software,Software,149.99,30,sup-014
+prod-181,Antivirus Software,Software,79.99,45,sup-014
+prod-182,Office Suite,Software,129.99,35,sup-014
+prod-183,Design Software,Software,499.99,12,sup-014
+prod-184,Video Editing Software,Software,299.99,18,sup-014
+prod-185,Audio Editing Software,Software,199.99,22,sup-014
+prod-186,Backup Software,Software,99.99,28,sup-014
+prod-187,VPN Software,Software,59.99,40,sup-014
+prod-188,Remote Desktop Software,Software,89.99,32,sup-014
+prod-189,Server Rack,Hardware,999.99,2,sup-015
+prod-190,Network Cabinet,Hardware,599.99,4,sup-015
+prod-191,Patch Panel,Hardware,129.99,18,sup-015
+prod-192,Cable Management,Hardware,49.99,45,sup-015
+prod-193,KVM Switch,Hardware,199.99,12,sup-015
+prod-194,Server,Hardware,1999.99,1,sup-015
+prod-195,Workstation,Hardware,1299.99,3,sup-015
+prod-196,Thin Client,Hardware,299.99,8,sup-015
+prod-197,Network Attached Storage,Hardware,799.99,5,sup-015
+prod-198,Uninterruptible Power Supply,Hardware,399.99,7,sup-015
+prod-199,Rack Mount Kit,Hardware,79.99,25,sup-015
+prod-200,Server Memory,Hardware,199.99,15,sup-015
